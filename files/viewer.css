@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }  
+
+.container{
+   
+    width: 100%;
+    height: auto;
+    
+   
+  
+}
+ 
+.heading{
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1vh;
+    height: 12vh;
+    margin-bottom: 1vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.heading .logo h2{
+    background: linear-gradient(to right, #1E90FF, #000000, #FF0000);
+    -webkit-background-clip: text;
+   
+    color: transparent;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.heading h1{
+    color: black;
+    background: linear-gradient(to right, #1E90FF, #000000, #FF0000);
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+   
+    border-radius: 6px;
+}
+
+
+#mySidenav,.open{
+    display: block;
+}
+
+/* small screen nav bar */
+            
+                
+.sidenav {
+    text-align: left;
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+    
+padding: 8px 8px 8px 32px;
+
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s;
+margin: 30px;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}

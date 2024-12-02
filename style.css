@@ -1,0 +1,771 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+/* start of navbar */
+
+
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    padding: 15px;
+    
+   
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+/* Logo styling */
+.header .logo{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 30px;
+    height: 65px;
+}
+.header .logo h3{
+    background: linear-gradient(to right, #1E90FF, #000000, #FF0000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+
+   
+}
+
+/* Marquee and text styling */
+.header .words{
+    padding: 7px;
+    width: 50%;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to right, #1E90FF, #000000);
+    color: white;
+
+   
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+   
+}
+
+.header .started{
+    margin-right: 30px;
+}
+
+.header .started button{
+    padding: 9px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+}
+
+.forsmallscreen{
+    display: none;
+}
+/* end of navbar */
+
+/* homepage */
+.homepage{
+     
+     background-color: rgba(212, 212, 212, 0.151);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.jpg);
+   
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ 
+    height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.homeleft{
+   
+    width: 30%;
+    height: 60vh;
+    padding: 5px;
+    text-align: left;
+    margin-left: 8vw;
+    color: white;
+}
+.homeleft h2{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+.homeleft h1{
+    font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.homeleft p{
+    font-size: 25px;
+}
+.homeleft button{
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+  
+    background: linear-gradient(to right, red, orange);
+    animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;  /* Apply smooth shake animation */
+
+
+}
+/* Keyframes for smoother shaking effect */
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-6px);
+    }
+    20% {
+      transform: translateX(6px);
+    }
+    30% {
+      transform: translateX(-4px);
+    }
+    40% {
+      transform: translateX(4px);
+    }
+    50% {
+      transform: translateX(-2px);
+    }
+    60% {
+      transform: translateX(2px);
+    }
+    70% {
+      transform: translateX(0);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    90% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+.homeright{
+    border: 5px solid white;
+    margin-right: 15vw;
+    width: 35%;
+    height: 50vh;
+    background-image: url(images/pombe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+  
+
+  
+}
+.homeright .image{
+    border: 5px solid white;
+    height: 46vh;
+    width: 350px;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    background-image: url(images/about1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end of homegae */
+/* events */
+.ourevents{
+  
+    padding-top: 2vh;
+
+}
+.eventshed{
+    text-align: center;
+    
+}
+.eventshed h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+.events{
+    
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event{
+    
+    height: auto;
+    width: 350px;
+    margin: 5vh;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+   
+}
+.eventimage{
+    height: 50vh;
+    width: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:  url(images/images.jpeg);
+
+}
+.eventcontent{
+   
+    height: 20vh;
+    margin-top: 5px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.eventcontent p{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buy button{
+    padding: 9px;
+   
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+}
+.buttons{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.buttons button{
+    padding: 7px;
+    margin: 20px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #1E90FF, #000000);
+}
+/* end of events */
+/* about */
+.about{
+  
+    
+    height: 90vh;
+    opacity: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+   
+}
+.about .content{
+   
+    width: 50%;
+    height: 70vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.about .content h1{
+    margin-bottom: 5vh;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    
+}
+.about .content p{
+    font-family: "Courgette", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+.about .content button{
+    padding: 12px;
+    margin: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+
+}
+/* end of about */
+/* audience */
+.audience{
+    margin: 5vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.audi{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 20vh;
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #1E90FF, #000000);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+/* end of audience */
+/* partners */
+.partners{
+    background-color: rgba(212, 212, 212, 0.151);
+    height: auto;
+    
+}
+.partnershed{
+    text-align: center; 
+   
+    
+}
+.partnershed h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+.marque{
+    
+}
+.marque img{
+    width: 20%;
+    height: 20vh;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* end of partners */
+/* footer */
+footer .ft{
+    height: 50vh;
+    padding-top: 5vh;
+    background-color: rgb(21, 20, 20);
+    color: white;
+  
+  
+}
+footer .ft p a{
+    text-decoration: none;
+}
+/* end of footer */
+@media (max-width: 900px){
+    section{
+        
+        margin: 0 auto;
+        height: auto;
+
+    }
+/* start of navbar */
+
+
+.header{
+    display: none;
+}
+
+
+
+
+
+
+.forsmallscreen{
+    margin-bottom: 3px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+.headersmall{
+    width: 98%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.headersmall .logo h3{
+    background: linear-gradient(to right, #1E90FF, #000000, #FF0000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+    font-style: normal;
+    text-transform: capitalize;
+    
+}
+
+.headersmall .started button{
+    padding: 8px;
+    width: 140px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+}
+.forsmallscreen .words{
+    padding: 7px;
+    width: 100%;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to right, #1E90FF, #000000);
+    color: white;
+
+   
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+/* end of navbar */
+
+/* homepage */
+.homepage{
+     
+     background-color: rgba(212, 212, 212, 0.151);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.jpg);
+   
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ 
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.homeleft{
+
+    width: 70%;
+    height: auto;
+    padding: 5px;
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 8vw;
+    color: white;
+}
+.homeleft h2{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+.homeleft h1{
+    font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.homeleft p{
+    font-size: 25px;
+}
+.homeleft button{
+    padding: 12px;
+    margin: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+}
+.homeright{
+   
+    display: none;
+
+   
+  
+
+  
+}
+
+/* end of homegae */
+/* events */
+.ourevents{
+  
+    padding-top: 2vh;
+
+}
+.eventshed{
+    text-align: center;
+    
+}
+.eventshed h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+.events{
+    
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event{
+     
+    height: auto;
+    width: 400px;
+    margin: 1vh;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+   
+}
+.eventimage{
+    height: 45vh;
+    width: 100%;
+    border-radius: 10px;
+   background-image:  url(images/images.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.eventcontent{
+   
+    height: auto;
+    margin-top: 5px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.eventcontent p{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buy button{
+    padding: 9px;
+   
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+}
+.buttons{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.buttons button{
+    padding: 7px;
+    margin: 20px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #1E90FF, #000000);
+}
+/* end of events */
+/* about */
+.about{
+    height: auto;
+    opacity: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+   
+}
+.about .content{ 
+    width: 95%;
+    height: 60vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+}
+.about .content h1{
+    margin-bottom: 5vh;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+.about .content p{
+    font-family: "Courgette", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+.about .content button{
+    padding: 12px;
+    margin: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 1, 1);
+
+}
+/* end of about */
+/* audience */
+.audience{
+    margin: 3vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.audi{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 18vh;
+    margin: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #1E90FF, #000000);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+/* end of audience */
+/* partners */
+.partners{
+    background-color: rgba(212, 212, 212, 0.151);
+    height: auto;
+    
+}
+.partnershed{
+    text-align: center; 
+   
+    
+}
+.partnershed h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.marque img{
+    width: 200px;
+    height: 20vh;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* end of partners */
+/* footer */
+
+footer .ft{
+   
+    height: auto;
+    padding-top: 5vh;
+    background-color: rgb(21, 20, 20);
+    color: white;
+  
+  
+}
+footer .ft p a{
+    text-decoration: none;
+}
+/* end of footer */
+}
